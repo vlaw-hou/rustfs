@@ -17,7 +17,7 @@ services:
   rustfs:
     security_opt:
       - "no-new-privileges:true"
-    image: rustfs/rustfs:latest
+    image: rustfs/rustfs:latest  docker pull rustfs/rustfs:1.0.0-rc.5
     container_name: rustfs-server
     build:
       context: .
