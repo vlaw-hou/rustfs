@@ -33,17 +33,6 @@ services:
       - /opt/1panel/docker/compose/rustfs/data/rustfs3:/data/rustfs3
       - /opt/1panel/docker/compose/rustfs/data/logs:/app/logs
       
-      # - ./deploy/data/pro:/data
-      # - ./deploy/logs:/app/logs
-      # TLS configuration directory.
-      # Place at least:
-      # - /opt/tls/ca.crt
-      # - /opt/tls/rustfs_cert.pem
-      # - /opt/tls/rustfs_key.pem
-      # - ./deploy/data/certs/:/opt/tls
-      # Permission baseline:
-      # - default RustFS runtime user is 10001:10001
-      # - ensure host mounts are writable by that user, or run with host-matched user
     networks:
       - caddynet
     restart: unless-stopped
